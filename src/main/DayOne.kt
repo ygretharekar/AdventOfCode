@@ -43,3 +43,11 @@ fun dayOne(x: String): Int = (x + x[0])
     .filter { it.first == it.second }
     .map { it.first }
     .sum()
+
+fun dayOnePart2(x: String): Int = x
+    .substring(0, x.length/2)
+    .toList()
+    .map { it.toString().toInt() }
+    .filterIndexed { index: Int, i: Int -> i == x[x.length/2 + index].toString().toInt() }
+    .map { it*2 }
+    .sum()
