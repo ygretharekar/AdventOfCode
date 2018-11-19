@@ -3,10 +3,8 @@ package test
 import main.dayOne
 import main.dayOnePart2
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.assertAll
 import java.io.File
 import kotlin.test.assertEquals
-import kotlin.test.fail
 
 internal class DayOneTest{
     @Test
